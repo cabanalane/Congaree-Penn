@@ -229,3 +229,32 @@ figcaption{margin-top:12px;font-style:italic;font-size:16px;line-height:1.45;col
   .pairs{grid-template-columns:1fr}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* batch 3 */
+.listen{margin-top:32px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;padding:18px 22px;border:1px solid var(--rule);background:var(--ivory);max-width:640px}
+.listen-title{font-family:var(--display);font-size:22px;flex:1 1 auto}
+.listen audio{width:100%;height:40px}
+.lakes{margin:56px 0 0}
+.lakes img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:50% 45%}
+.register div{flex-wrap:wrap}
+.register em{margin-left:auto;font-style:normal;font-family:var(--display);font-size:20px;color:var(--ink);white-space:nowrap}
+.register .claimed em{display:none}
+.film-embed{flex:1 1 340px;max-width:520px;margin:0}
+.film-embed video{width:100%;height:auto;display:block;background:#000}
+.film-embed figcaption{color:var(--sage-light);font-style:normal;font-size:16px}
+.film-embed .lbl{display:block;margin-bottom:6px}
+.precedents{margin-top:88px;border-top:2px solid var(--pine);padding-top:24px}
+.prec-head{display:flex;flex-wrap:wrap;gap:8px 32px;justify-content:space-between;align-items:baseline}
+.prec-note{margin:0;font-style:italic;font-size:16px;color:var(--quiet);max-width:560px}
+.prec-grid{margin-top:24px;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:170px;gap:12px}
+.prec-grid figure{margin:0;position:relative;overflow:hidden}
+.prec-grid picture,.prec-grid img{width:100%;height:100%}
+.prec-grid img{object-fit:cover}
+.prec-grid figcaption{position:absolute;left:0;right:0;bottom:0;margin:0;padding:24px 12px 10px;font-family:var(--label);font-style:normal;font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--ivory);background:linear-gradient(180deg,rgba(28,42,31,0),rgba(28,42,31,.78))}
+.p-a{grid-column:span 3;grid-row:span 2}.p-b{grid-column:span 3;grid-row:span 2}
+.p-c{grid-column:span 2}.p-d{grid-column:span 2}.p-e{grid-column:span 2;grid-row:span 2}
+.p-f{grid-column:span 2}.p-g{grid-column:span 2}
+@media (max-width:900px){.prec-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:180px;grid-auto-flow:dense}.prec-grid figure{grid-column:span 1;grid-row:span 1}.p-a{grid-column:span 2!important;grid-row:span 2!important}}
+.register{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.register div{flex-wrap:nowrap;padding-right:24px}
+.register span{flex:1 1 auto}
