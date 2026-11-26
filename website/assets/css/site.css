@@ -258,3 +258,51 @@ figcaption{margin-top:12px;font-style:italic;font-size:16px;line-height:1.45;col
 .register{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
 .register div{flex-wrap:nowrap;padding-right:24px}
 .register span{flex:1 1 auto}
+
+/* interactive Register */
+.atlas{margin-top:72px;border-top:2px solid var(--pine);padding-top:28px}
+.atlas-head{display:flex;flex-wrap:wrap;gap:24px 48px;align-items:flex-end;justify-content:space-between}
+.atlas-head h3{margin-top:10px;font-size:clamp(34px,3.6vw,48px)}
+.timeline{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--rule)}
+.timeline li+li{border-left:1px solid var(--rule)}
+.timeline button{all:unset;cursor:pointer;display:block;padding:12px 16px;min-height:44px;box-sizing:border-box;font-family:var(--display);font-size:18px;line-height:1.2;color:var(--ink)}
+.timeline button .lbl{display:block;font-size:10px;margin-bottom:4px}
+.timeline button:hover,.timeline button.on{background:var(--pine);color:var(--ivory)}
+.timeline button.on .lbl,.timeline button:hover .lbl{color:var(--gold)}
+.timeline button:focus-visible{outline:2px solid var(--brass);outline-offset:-2px}
+.atlas-body{margin-top:28px;display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+.atlas-map{flex:999 1 560px;min-width:0;position:relative;background:#fff;padding:12px;box-shadow:0 2px 4px rgba(35,48,37,.08),0 16px 36px rgba(35,48,37,.14)}
+.atlas-map img{width:100%;height:auto}
+.pin{all:unset;box-sizing:border-box;position:absolute;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;display:grid;place-items:center;cursor:pointer;font-family:var(--label);font-weight:500;font-size:13px;transition:transform .18s,opacity .18s,box-shadow .18s;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.pin-open{background:var(--ivory);color:var(--pine);border:2px solid var(--pine)}
+.pin-claimed{background:var(--brass);color:var(--pine-deep);border:2px solid var(--ivory)}
+.pin-building{background:var(--pine);color:var(--ivory);border:2px solid var(--gold)}
+.pin-building::after{content:"";position:absolute;inset:-7px;border-radius:50%;border:2px solid var(--gold);animation:ring 2.2s ease-out infinite}
+@keyframes ring{from{transform:scale(.8);opacity:.9}to{transform:scale(1.5);opacity:0}}
+.pin.active,.pin:hover{transform:scale(1.25);z-index:2;box-shadow:0 0 0 6px rgba(176,132,58,.35),0 4px 14px rgba(0,0,0,.3)}
+.pin:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.dim{opacity:.28}
+.legend{position:absolute;left:24px;bottom:22px;display:flex;flex-wrap:wrap;gap:6px 14px;background:rgba(244,238,222,.92);padding:8px 12px;font-family:var(--label);font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--ink)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.k-open{background:var(--ivory);border:2px solid var(--pine)}.k-claimed{background:var(--brass)}.k-building{background:var(--pine);border:2px solid var(--gold)}
+.atlas-side{flex:1 1 320px;min-width:0;display:flex;flex-direction:column;gap:18px}
+.card{background:var(--pine);color:var(--ivory);padding:24px 24px 26px;min-height:250px}
+.card .lbl{color:var(--gold)}
+.card-no{margin:10px 0 0;font-family:var(--display);font-size:34px;line-height:1.05}
+.card-price{margin:6px 0 0;font-family:var(--display);font-style:italic;font-size:21px;color:var(--gold)}
+.card-text{margin:12px 0 0;font-size:17px;line-height:1.55;color:var(--sage-light)}
+.card .btn{margin-top:18px;background:var(--brass);color:var(--pine-deep)}
+.card .btn[hidden]{display:none}
+.roster{list-style:none;margin:0;padding:0;border-top:2px solid var(--pine)}
+.row{all:unset;box-sizing:border-box;width:100%;cursor:pointer;display:flex;align-items:baseline;gap:14px;padding:11px 8px;min-height:44px;border-bottom:1px solid var(--rule);transition:background .15s,opacity .18s}
+.row b{font-family:var(--display);font-weight:500;font-size:21px;min-width:62px}
+.row span{flex:1;font-size:16px;color:var(--muted)}
+.row em{font-style:normal;font-family:var(--display);font-size:19px;white-space:nowrap}
+.row-claimed span,.row-building span{color:var(--bronze);font-weight:500}
+.row:hover,.row.active{background:var(--oat)}
+.row:focus-visible{outline:2px solid var(--brass);outline-offset:-2px}
+.farm-wide{margin:48px 0 0}
+.farm-wide img{width:100%;height:auto}
+@media (max-width:900px){.pin{width:28px;height:28px;margin:-14px 0 0 -14px;font-size:11px}.legend{position:static;margin-top:10px;background:none;padding:0}.card{min-height:0}}
+@media (prefers-reduced-motion:reduce){.pin-building::after{animation:none}}
+.farm-wide{max-width:880px}

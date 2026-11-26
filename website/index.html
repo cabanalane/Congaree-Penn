@@ -191,8 +191,62 @@
       <figcaption class="cap-row"><span>The lakes of The Eleven, with Cary State Forest on the horizon.</span><span class="lbl" style="font-size:11px;font-style:normal">Ten acres to call your own</span></figcaption>
     </figure>
 
-    <div class="maps">
-      <figure class="farm-map">
+    <div class="atlas" id="register">
+      <div class="atlas-head">
+        <div>
+          <p class="lbl">The Register · November 2026</p>
+          <h3>The map <em>is changing.</em></h3>
+        </div>
+        <ol class="timeline" aria-label="How the map has changed">
+          <li><button type="button" data-show="all"><span class="lbl">2026</span>Eleven Claims drawn</button></li>
+          <li><button type="button" data-show="4"><span class="lbl">October</span>No. 4 proved up</button></li>
+          <li><button type="button" data-show="10"><span class="lbl">October</span>First home rises on No. 10</button></li>
+          <li><button type="button" data-show="open" class="on"><span class="lbl">Today</span>Nine Claims remain</button></li>
+        </ol>
+      </div>
+      <div class="atlas-body">
+        <div class="atlas-map">
+          <picture>
+            <source type="image/webp" srcset="assets/img/the-eleven-claim-map-eleven-claims-800.webp 800w, assets/img/the-eleven-claim-map-eleven-claims-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 62vw">
+            <img src="assets/img/the-eleven-claim-map-eleven-claims-1200.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Watercolor plan of The Eleven showing Claims 1 through 11 among pastures, ponds, a creek and tree canopy">
+          </picture>
+          <button type="button" class="pin pin-open" style="left:26.2%;top:67.3%" data-claim="1" aria-label="Claim No. 1: Available, $750,000"><span>1</span></button>
+          <button type="button" class="pin pin-open" style="left:19.5%;top:67.3%" data-claim="2" aria-label="Claim No. 2: Available, Ask John"><span>2</span></button>
+          <button type="button" class="pin pin-open" style="left:29.2%;top:54.4%" data-claim="3" aria-label="Claim No. 3: Available, $825,000"><span>3</span></button>
+          <button type="button" class="pin pin-claimed" style="left:32.7%;top:41.1%" data-claim="4" aria-label="Claim No. 4: Claimed, closed"><span>4</span></button>
+          <button type="button" class="pin pin-open" style="left:45.3%;top:57.3%" data-claim="5" aria-label="Claim No. 5: Available, $950,000"><span>5</span></button>
+          <button type="button" class="pin pin-open" style="left:48.3%;top:38.9%" data-claim="6" aria-label="Claim No. 6: Available, $900,000"><span>6</span></button>
+          <button type="button" class="pin pin-open" style="left:57.2%;top:54.4%" data-claim="7" aria-label="Claim No. 7: Available, $1,000,000"><span>7</span></button>
+          <button type="button" class="pin pin-open" style="left:67.3%;top:61.1%" data-claim="8" aria-label="Claim No. 8: Available, $1,000,000"><span>8</span></button>
+          <button type="button" class="pin pin-open" style="left:73.3%;top:70.0%" data-claim="9" aria-label="Claim No. 9: Available, $1,050,000"><span>9</span></button>
+          <button type="button" class="pin pin-building" style="left:65.7%;top:39.3%" data-claim="10" aria-label="Claim No. 10: Claimed, first home underway"><span>10</span></button>
+          <button type="button" class="pin pin-open" style="left:66.3%;top:11.1%" data-claim="11" aria-label="Claim No. 11: Available, $1,200,000"><span>11</span></button>
+          <div class="legend" aria-hidden="true"><span><i class="k-open"></i>Available</span><span><i class="k-claimed"></i>Claimed</span><span><i class="k-building"></i>Building</span></div>
+        </div>
+        <div class="atlas-side">
+          <div class="card" aria-live="polite">
+            <p class="lbl" id="card-status">Nine of eleven remain</p>
+            <p class="card-no" id="card-no">Choose a Claim</p>
+            <p class="card-price" id="card-price">Ten acres each · $750K to $1.2M</p>
+            <p class="card-text" id="card-text">Hover or tap a Claim on the map or in the roster to see where it sits and what makes it its own.</p>
+            <a class="btn btn-pine" id="card-cta" href="sms:+18434756686?&amp;body=I%27d%20like%20to%20walk%20The%20Eleven">Walk this Claim with John</a>
+          </div>
+          <ul class="roster" aria-label="Claims roster">
+        <li><button type="button" class="row row-open" data-claim="1"><b>No. 1</b><span>Available</span><em>$750,000</em></button></li>
+        <li><button type="button" class="row row-open" data-claim="2"><b>No. 2</b><span>Available</span><em>Ask John</em></button></li>
+        <li><button type="button" class="row row-open" data-claim="3"><b>No. 3</b><span>Available</span><em>$825,000</em></button></li>
+        <li><button type="button" class="row row-claimed" data-claim="4"><b>No. 4</b><span>Claimed</span><em></em></button></li>
+        <li><button type="button" class="row row-open" data-claim="5"><b>No. 5</b><span>Available</span><em>$950,000</em></button></li>
+        <li><button type="button" class="row row-open" data-claim="6"><b>No. 6</b><span>Available</span><em>$900,000</em></button></li>
+        <li><button type="button" class="row row-open" data-claim="7"><b>No. 7</b><span>Available</span><em>$1,000,000</em></button></li>
+        <li><button type="button" class="row row-open" data-claim="8"><b>No. 8</b><span>Available</span><em>$1,000,000</em></button></li>
+        <li><button type="button" class="row row-open" data-claim="9"><b>No. 9</b><span>Available</span><em>$1,050,000</em></button></li>
+        <li><button type="button" class="row row-building" data-claim="10"><b>No. 10</b><span>Claimed · building</span><em></em></button></li>
+        <li><button type="button" class="row row-open" data-claim="11"><b>No. 11</b><span>Available</span><em>$1,200,000</em></button></li>
+          </ul>
+        </div>
+      </div>
+      <figure class="farm-wide">
         <a href="assets/img/congaree-penn-overall-farm-map-2000.jpg" style="display:block">
         <picture>
           <source type="image/webp" srcset="assets/img/congaree-penn-overall-farm-map-1000.webp 1000w, assets/img/congaree-penn-overall-farm-map-2000.webp 2000w" sizes="(max-width: 900px) 100vw, 34vw">
@@ -201,30 +255,8 @@
         </a>
         <figcaption>The whole farm. The Eleven lines its western edge. <a href="assets/img/congaree-penn-overall-farm-map-2000.jpg">Open the full map</a></figcaption>
       </figure>
-      <figure class="claim-map">
-        <div class="mat">
-          <picture>
-            <source type="image/webp" srcset="assets/img/the-eleven-claim-map-eleven-claims-800.webp 800w, assets/img/the-eleven-claim-map-eleven-claims-1200.webp 1200w" sizes="(max-width: 900px) 100vw, 60vw">
-            <img src="assets/img/the-eleven-claim-map-eleven-claims-1200.jpg" width="1200" height="900" loading="lazy" decoding="async" alt="Watercolor plan of The Eleven showing Claims 1 through 11 among pastures, ponds and tree canopy">
-          </picture>
-        </div>
-        <figcaption class="cap-row"><span>The map is changing. Claim No. 4 is proved up; the first home rises on Claim No. 10.</span><span class="lbl" style="font-size:11px;font-style:normal">Nine Claims remain</span></figcaption>
-      </figure>
     </div>
-
-    <div class="register" aria-label="The Register, November 2026">
-      <div><b>No. 1</b><span>Available</span><em>$750,000</em></div>
-      <div><b>No. 2</b><span>Available</span><em>Ask John</em></div>
-      <div><b>No. 3</b><span>Available</span><em>$825,000</em></div>
-      <div class="claimed"><b>No. 4</b><span>Claimed · closed</span><em></em></div>
-      <div><b>No. 5</b><span>Available</span><em>$950,000</em></div>
-      <div><b>No. 6</b><span>Available · backs to the forest</span><em>$900,000</em></div>
-      <div><b>No. 7</b><span>Available</span><em>$1,000,000</em></div>
-      <div><b>No. 8</b><span>Available</span><em>$1,000,000</em></div>
-      <div><b>No. 9</b><span>Available</span><em>$1,050,000</em></div>
-      <div class="claimed"><b>No. 10</b><span>Claimed · first home underway</span><em></em></div>
-      <div><b>No. 11</b><span>Available</span><em>$1,200,000</em></div>
-    </div>
+    <script type="application/json" id="claims-data">{"1": {"s": "open", "p": "$750,000", "t": "Open pasture near the entry, beside its own pond."}, "2": {"s": "open", "p": "Ask John", "t": "The southwest corner, wrapped by tree canopy and a pond."}, "3": {"s": "open", "p": "$825,000", "t": "Pasture opening to a wooded edge."}, "4": {"s": "claimed", "p": "Closed", "t": "Proved up in October 2026: pond, oak hammocks and pasture. The first Claim at The Eleven."}, "5": {"s": "open", "p": "$950,000", "t": "At the heart of the plan, with its own pond."}, "6": {"s": "open", "p": "$900,000", "t": "Backs to Cary State Forest, with water views to the south and west."}, "7": {"s": "open", "p": "$1,000,000", "t": "Centered on a hammock of mature trees."}, "8": {"s": "open", "p": "$1,000,000", "t": "Along the creek and its ponds."}, "9": {"s": "open", "p": "$1,050,000", "t": "The eastern corner, framed by the creek and the entry drive."}, "10": {"s": "building", "p": "First home underway", "t": "Riverside Custom Homes is building the first home at The Eleven here."}, "11": {"s": "open", "p": "$1,200,000", "t": "Set apart to the north, its own clearing in the woods."}}</script>
 
     <div class="price oat">
       <div>
@@ -484,5 +516,42 @@
     <p>Pricing is for land only and subject to change. Plans and renderings are illustrative. ©2014–2026 Congaree and Penn. <a href="https://www.congareeandpenn.com/">congareeandpenn.com</a></p>
   </div>
 </footer>
+<script>
+{
+  const data = JSON.parse(document.getElementById('claims-data').textContent);
+  const atlas = document.querySelector('.atlas');
+  const $ = s => atlas.querySelectorAll(s);
+  const card = {st: document.getElementById('card-status'), no: document.getElementById('card-no'), pr: document.getElementById('card-price'), tx: document.getElementById('card-text'), cta: document.getElementById('card-cta')};
+  const label = {open: 'Available', claimed: 'Claimed · closed', building: 'Claimed · first home underway'};
+  let locked = null;
+  function show(n) {
+    $('[data-claim]').forEach(el => el.classList.toggle('active', el.dataset.claim === n));
+    atlas.classList.toggle('focus', !!n);
+    if (!n) return;
+    const c = data[n];
+    card.st.textContent = label[c.s];
+    card.no.textContent = 'Claim No. ' + n;
+    card.pr.textContent = c.s === 'open' ? c.p + ' · ten acres' : (c.s === 'claimed' ? 'Proved up' : 'Under construction');
+    card.tx.textContent = c.t;
+    card.cta.hidden = c.s !== 'open';
+    card.cta.href = 'sms:+18434756686?&body=' + encodeURIComponent("I'd like to walk Claim No. " + n + ' at The Eleven');
+  }
+  function filter(kind) {
+    $('.timeline button').forEach(b => b.classList.toggle('on', b.dataset.show === kind));
+    $('.pin, .row').forEach(el => {
+      const s = data[el.dataset.claim].s;
+      el.classList.toggle('dim', kind === 'open' ? false : kind === 'all' ? false : el.dataset.claim !== kind);
+    });
+    if (kind !== 'all' && kind !== 'open') { locked = kind; show(kind); } else { locked = null; show(null); }
+  }
+  $('[data-claim]').forEach(el => {
+    el.addEventListener('mouseenter', () => show(el.dataset.claim));
+    el.addEventListener('focus', () => show(el.dataset.claim));
+    el.addEventListener('mouseleave', () => show(locked));
+    el.addEventListener('click', () => { locked = el.dataset.claim; show(locked); $('.timeline button').forEach(b => b.classList.remove('on')); $('.pin, .row').forEach(x => x.classList.remove('dim')); });
+  });
+  $('.timeline button').forEach(b => b.addEventListener('click', () => filter(b.dataset.show)));
+}
+</script>
 </body>
 </html>
