@@ -22,3 +22,8 @@ which resizes, compresses to WebP/JPEG and strips camera data.
 - A real landscape/drone photo for the farm (the aerial here is the YouTube poster with its play button)
 - "It All Begins" essay link points to /blog until the post is published there
 - Move this folder into the private `cabanalane/websites` repo once it exists
+
+## Journal
+Articles live in `journal-src/*.md` (front matter + simple markdown). Run `python3 -I scripts/build_journal.py`
+to rebuild `website/journal/` (home, six category pages, article pages, RSS feed) and `website/sitemap.xml`.
+Copied articles carry `canonical:` pointing to their original; new originals omit it.
