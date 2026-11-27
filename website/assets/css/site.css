@@ -360,3 +360,6 @@ figcaption{margin-top:12px;font-style:italic;font-size:16px;line-height:1.45;col
 .interlude-copy .lbl{margin-top:0;text-shadow:0 1px 12px rgba(0,0,0,.45)}
 .h1-eyebrow{display:block;margin-bottom:20px;color:var(--gold);font-size:12px;letter-spacing:.3em;line-height:1.4}
 .hero-copy .h1-eyebrow{color:var(--ivory);text-shadow:0 1px 14px rgba(0,0,0,.6)}
+.hero-figure{margin:32px 0 0}
+.hero-figure img{display:block;width:100%;height:auto}
+.hero-figure figcaption{margin-top:10px;color:var(--muted,#6b6b5e)}
