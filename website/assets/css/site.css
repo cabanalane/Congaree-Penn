@@ -351,3 +351,4 @@ figcaption{margin-top:12px;font-style:italic;font-size:16px;line-height:1.45;col
 .portrait .tag{position:absolute;left:24px;bottom:24px;background:var(--ivory);color:var(--ink);padding:14px 20px}
 .portrait .tag span{display:block}
 .portrait .tag .lbl{margin-top:4px}
+.portrait .tag{left:50%;right:auto;transform:translateX(-50%);width:min(340px,calc(100% - 48px));padding:18px 24px;text-align:center}
