@@ -364,3 +364,4 @@ figcaption{margin-top:12px;font-style:italic;font-size:16px;line-height:1.45;col
 .hero-figure img{display:block;width:100%;height:auto}
 .hero-figure figcaption{margin-top:10px;color:var(--muted,#6b6b5e)}
 .hero-figure .credit{opacity:.7}
+.hero-figure figcaption{font-size:9px;letter-spacing:.22em;margin-top:8px}
