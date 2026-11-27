@@ -352,3 +352,9 @@ figcaption{margin-top:12px;font-style:italic;font-size:16px;line-height:1.45;col
 .portrait .tag span{display:block}
 .portrait .tag .lbl{margin-top:4px}
 .portrait .tag{left:50%;right:auto;transform:translateX(-50%);width:min(340px,calc(100% - 48px));padding:18px 24px;text-align:center}
+
+/* interlude: title in the sky, line in the grass */
+.interlude{align-items:stretch}
+.interlude::after{background:linear-gradient(180deg,rgba(28,42,31,.38) 0%,rgba(28,42,31,.08) 38%,rgba(28,42,31,0) 55%,rgba(28,42,31,.45) 100%)}
+.interlude-copy{width:100%;display:flex;flex-direction:column;justify-content:space-between;align-items:center;padding-top:clamp(28px,5vw,64px);padding-bottom:clamp(22px,4vw,48px)}
+.interlude-copy .lbl{margin-top:0;text-shadow:0 1px 12px rgba(0,0,0,.45)}
