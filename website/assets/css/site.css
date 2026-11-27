@@ -348,3 +348,6 @@ figcaption{margin-top:12px;font-style:italic;font-size:16px;line-height:1.45;col
 .j-cta{padding:clamp(64px,8vw,104px) 0}
 .j-cta .lede{margin-top:16px}
 .j-cta .btns{margin-top:28px}
+.portrait .tag{position:absolute;left:24px;bottom:24px;background:var(--ivory);color:var(--ink);padding:14px 20px}
+.portrait .tag span{display:block}
+.portrait .tag .lbl{margin-top:4px}
